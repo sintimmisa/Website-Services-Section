@@ -1,0 +1,99 @@
+/*General Style*/
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: roboto, open sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+}
+body {
+  background-color: #efefef;
+  height: auto;
+  scroll-behavior: smooth;
+}
+
+/*Mobile View*/
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container article {
+  width: 100%;
+  height: auto;
+  margin: 40px 0;
+  background-color: white;
+}
+
+.container .img {
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.container .web-img {
+  background: url("../images/Web.jpg") no-repeat center center / cover;
+}
+
+.container .container .video-img {
+  background: url("../images/video.jpg") no-repeat center center / cover;
+}
+
+.container .graphic-img {
+  background: url("../images/mobile.jpg") no-repeat center center / cover;
+}
+
+.container .content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.content:hover {
+  background-color: #efefef;
+}
+
+h1 {
+  text-align: center;
+  font-size: 38px;
+  margin-top: 30px;
+}
+
+.container h2 {
+  font-size: 24px;
+}
+
+.container .btn {
+  background-color: rgb(6, 6, 138);
+  color: white;
+  width: 100px;
+  text-align: center;
+  padding: 20px 35px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #efefef;
+  color: rgb(6, 6, 138);
+}
+/*Tablet and Desktop view*/
+@media only screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+  .container .img {
+    height: 250px;
+  }
+
+  .container .content {
+    padding: 40px;
+  }
+  .container p {
+    font-size: 18px;
+  }
+}
